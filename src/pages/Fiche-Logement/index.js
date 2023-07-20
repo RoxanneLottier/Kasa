@@ -1,8 +1,12 @@
 import Header from "../../components/Header/Index";
+import Footer from "../../components/Footer/Index";
 
 function FicheLogement() {
     return (
-        <Header />
+        <>
+            <Header />
+            <Footer />
+        </>
     );
 }
 

@@ -1,4 +1,5 @@
 import logoBlanc from '../../assets/LOGO-blanc.png'
+import styles from "./Footer.module.css";
 
 const logoBlancImage = {
     alt: 'logo-blanc-kasa'
@@ -6,7 +7,7 @@ const logoBlancImage = {
 
 function LogoBlanc() {
     return (
-        <img src={logoBlanc} alt={logoBlancImage.alt} />
+        <img className={styles.img} src={logoBlanc} alt={logoBlancImage.alt} />
     );
 }
 
