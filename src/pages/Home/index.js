@@ -1,13 +1,24 @@
 import Header from "../../components/Header/Index";
 import Footer from "../../components/Footer/Index";
 import CoverHeader from "../../components/coverHeader";
-import image from "../../assets/Image source 1.jpg"
+import coverImage from "../../assets/Image source 1.jpg"
+import Thumb from "./thumb";
+import styles from "./Home.module.css";
+import data from "../../data.json";
 
 function Home() {
     return (
         <>
             <Header />
-            <CoverHeader src={image} name="the-sea-in-fall" title="Chez vous, partout et ailleurs"/>
+            <CoverHeader src={coverImage} name="the-sea-in-fall" title="Chez vous, partout et ailleurs"/>
+
+            <section className={styles.thumbSection}>
+                {data.map(data => {
+                    return(
+                            <Thumb title={data.title} src={data.cover} value={data.id}/>
+                    )
+                })}
+            </section>
             <Footer />
         </>
     );

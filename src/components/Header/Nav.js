@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 
-function Nav() {
+function Nav(props) {
     return (
        <nav className={styles.nav}>
             <ul className={styles.ul}>
-                <li><Link className={styles.link} to="/">Accueil</Link></li>
-                <li><Link className={styles.link} to="/a-propos">A Propos</Link></li>
+                <li><NavLink className={({ isActive }) => (isActive ? styles.linkSelected : styles.link)} to="/">Accueil</NavLink></li>
+                <li><NavLink className={({ isActive }) => (isActive ? styles.linkSelected : styles.link)} to="/a-propos">A Propos</NavLink></li>
             </ul>
        </nav>
     );

@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/index';
 import FicheLogement from './pages/Fiche-Logement/index';
-import FourOFour from './pages/404/index';
+import PageNotFound from './pages/404/404';
 import APropos from './pages/A-Propos/index';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/404" element={<FourOFour />} />
+        <Route path="/page-not-found" element={<PageNotFound />} />
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/fiche-logement" element={<FicheLogement />} />
       </Routes>

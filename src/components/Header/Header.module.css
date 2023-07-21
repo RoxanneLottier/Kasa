@@ -22,3 +22,30 @@
     color: #FF6060;
     font-size: 24px;
 }
+
+.linkSelected {
+    text-decoration: underline;
+    color: #FF6060;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 375px) and (max-width:768px) {
+
+    .header {
+        margin: 0 0 27px 0;
+    }
+
+    .link, .linkSelected{
+        font-size: 12px;
+    }
+
+    .nav {
+        width: 150px;
+    }
+
+    .img {
+        width: 145px;
+        height: auto;
+    }
+
+}

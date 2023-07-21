@@ -1,0 +1,32 @@
+.bar {
+    padding: 10px 20px 10px 10px;
+    background: var(--red, #FF6060);
+    border-radius: 10px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content {
+    border-radius: 10px 10px 5px 5px;
+    background: var(--gray, #F6F6F6);
+    color: #FF6060;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.p {
+    margin:0;
+    font-weight: 400;
+}
+
+.collapseContainer {
+    width: 100%;
+}

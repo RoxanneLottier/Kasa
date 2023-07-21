@@ -1,4 +1,5 @@
-import logo from '../../assets/LOGO.png'
+import logo from '../../assets/LOGO.png';
+import styles from './Header.module.css';
 
 const logoImage = {
     alt: 'logo-Kasa'
@@ -6,7 +7,7 @@ const logoImage = {
 
 function Logo() {
     return (
-        <img src={logo} alt={logoImage.alt} />
+        <img className={styles.img} src={logo} alt={logoImage.alt} />
     );
 }
 
