@@ -36,11 +36,15 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 375px) and (max-width:768px) {
+@media only screen and (max-width:768px) {
 
     .coverHeader, .container {
         height: 111px;
-        margin:0;
+        margin: 0px 19px;
+    }
+
+    .container {
+        left: -18px;
     }
 
     .h1 {
