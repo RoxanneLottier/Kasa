@@ -5,6 +5,7 @@ import coverImage from "../../assets/Image source 1.jpg"
 import Thumb from "./thumb";
 import styles from "./Home.module.css";
 import data from "../../data.json";
+import { useParams } from "react-router-dom";
 
 function Home() {
     return (
@@ -15,7 +16,10 @@ function Home() {
             <section className={styles.thumbSection}>
                 {data.map(data => {
                     return(
-                            <Thumb title={data.title} src={data.cover} value={data.id}/>
+                            <Thumb  title={data.title}
+                                    src={data.cover}
+                                    key={data.id}
+                                    value={data.id}/>
                     )
                 })}
             </section>

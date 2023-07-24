@@ -6,6 +6,8 @@
     justify-content: space-between;
     width: 100%;
     gap: 76px;
+    list-style-type: none;
+    line-height: 142.6%; /* 25.668px */
 }
 
 .logementHeader{
@@ -36,7 +38,7 @@
     border-radius: 10px;
     background: #FF6060;
     padding: 3px 22px;
-    width: 115px;
+    list-style-type: none;
 }
 
 .tagSection {
@@ -44,10 +46,27 @@
     gap: 10px;
     justify-content: flex-start;
     margin-top: 20px;
+    padding: 0;
+
 }
 
 .host {
-    width: 167px;
+    display: flex;
+    height: 64px;
+}
+
+.hostImg {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+}
+
+.hostName {
+    font-size: 18px;
+    width: 120px;
+    margin: auto;
+    text-align: end;
 }
 
 .carrousel {
