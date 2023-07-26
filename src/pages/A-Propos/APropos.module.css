@@ -2,6 +2,10 @@
     margin: 38px 100px;
 }
 
+.paragraph {
+    margin:0;
+}
+
 @media only screen and (max-width:768px) {
     .content {
         margin: 19px;

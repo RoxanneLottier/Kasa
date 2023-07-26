@@ -33,11 +33,6 @@
     transition: height ease 0.3s;
 }
 
-.p {
-    margin:0;
-    font-weight: 400;
-}
-
 .collapseContainer {
     width: 100%;
 }
@@ -64,7 +59,7 @@
     }
 
     .contentShow {
-        height: 100px;
+        height: 200px;
     }
 
 }

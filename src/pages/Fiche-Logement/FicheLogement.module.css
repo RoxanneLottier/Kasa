@@ -79,6 +79,14 @@
     height: 36px;
 }
 
+.starOn {
+    fill: #FF6060;
+}
+
+.starOff {
+    fill: #E3E3E3;
+}
+
 .carrousel {
     max-width: 1240px;
     height: 415px;
@@ -232,7 +240,12 @@
         transform: scale(0.5);
     }
 
-    .star {
+    .starOn {
+        width: 20px;
+        height: 18px;;
+    }
+
+    .starOff {
         width: 20px;
         height: 18px;;
     }
