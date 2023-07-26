@@ -6,6 +6,7 @@ import data from "../../data.json";
 import Tag from "./tag";
 import Carrousel from "./carrousel";
 import { useParams } from "react-router-dom";
+import StarRating from "./starRating";
 
 function FicheLogement() {
     const { id } = useParams();
@@ -31,16 +32,22 @@ function FicheLogement() {
                         {tagList}
                     </ul>
                 </div>
-                <div className={styles.host}>
-                    <span className={styles.hostName}>{logement.host.name}</span>
-                    <img className={styles.hostImg} src={logement.host.picture}/>
-                    {/* star rating */}
+                <div className={styles.hostAndRating}>
+                    <StarRating />
+                    <div className={styles.host}>
+                        <span className={styles.hostName}>{logement.host.name}</span>
+                        <img className={styles.hostImg} src={logement.host.picture}/>
+                    </div>
                 </div>
             </div>
             <div className={styles.container}>
                 <div className={styles.collapseSection}>
-                    <Collapse title="Description" description={logement.description}/>
-                    <Collapse title="Equipements" description={listEquipment}/>
+                    <Collapse title="Description">
+                        <p className={styles.collapseParagraph}>{logement.description}</p>
+                    </Collapse>
+                    <Collapse title="Equipements">
+                        <ul className={styles.list}>{listEquipment}</ul>
+                    </Collapse>
                 </div>
             </div>
             <Footer />
