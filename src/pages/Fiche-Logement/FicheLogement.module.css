@@ -255,6 +255,7 @@
         border-radius: 5px;
         list-style-type: none;
         max-width: 84px;
+        padding: 3px 15px;
     }
 
     .tagSection {
