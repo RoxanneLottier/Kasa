@@ -3,6 +3,8 @@ import styles from "./Home.module.css";
 import data from "../../data.json"
 
 function Thumb(props) {
+    const isEmpty = props.value.length < 8;
+    console.log(props.value.length);
     return (
         <figure className={styles.figure} value={props.value}>
             <Link className={styles.link} to={`/fiche-logement/${props.value}`}>

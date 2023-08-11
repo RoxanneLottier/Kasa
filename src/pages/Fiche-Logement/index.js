@@ -3,7 +3,6 @@ import Footer from "../../components/Footer/Index";
 import Collapse from "../../components/Collapse";
 import styles from "./FicheLogement.module.css";
 import data from "../../data.json";
-import Tag from "./tag";
 import Carrousel from "./carrousel";
 import { useParams } from "react-router-dom";
 import StarRating from "./starRating";
@@ -13,12 +12,10 @@ function FicheLogement() {
     const logement = data.find(element => {return element.id === id});
 
     const equipments = logement.equipments;
-    console.log(equipments);
-    const listEquipment = equipments.map(equipment => <li>{equipment}</li>);
+    const listEquipment = equipments.map(equipment => <li key={equipment} >{equipment}</li>);
 
     const tags = logement.tags;
-    const tagList = tags.map(tag => <li className={styles.tag}>{tag}</li>);
-    console.log(tags)
+    const tagList = tags.map(tag => <li key={tag} className={styles.tag}>{tag}</li>);
 
     return (
         <>
