@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./Home.module.css";
-import data from "../../data.json"
+import styles from "./Thumb.module.css";
 
 function Thumb(props) {
     return (

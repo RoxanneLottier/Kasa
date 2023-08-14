@@ -1,14 +1,11 @@
-import Header from "../../components/Header/Index";
-import Footer from "../../components/Footer/Index";
-import CoverHeader from "../../components/coverHeader";
+import CoverHeader from "../../components/CoverHeader/coverHeader";
 import coverImage from "../../assets/Image source 2.jpg";
-import Collapse from "../../components/Collapse";
+import Collapse from "../../components/Collapse/Collapse";
 import styles from "./APropos.module.css";
 
 function APropos() {
     return (
         <>
-            <Header />
             <CoverHeader src={coverImage} name="the-mountains-when-it-snows" title=""/>
             <div className={styles.content}>
                 <Collapse title="Fiabilité">
@@ -33,7 +30,6 @@ function APropos() {
                           également des ateliers sur la sécurité domestique pour nos hôtes.</p>
                 </Collapse>
             </div>
-            <Footer />
         </>
     );
 }

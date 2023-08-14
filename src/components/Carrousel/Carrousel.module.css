@@ -1,0 +1,99 @@
+.carrousel {
+    max-width: 1240px;
+    height: 415px;
+    margin: 0 100px 30px 100px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.carrouselPictures {
+    list-style-type: none;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.arrowContainer {
+    z-index: 3;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.arrowBack {
+    float: left;
+    margin: 20px;
+}
+
+.arrowForward {
+    float: right;
+    margin: 20px;
+}
+
+.pictureCountContainer {
+    position: absolute;
+    top:93%;
+    width: 100%;
+}
+
+.pictureCount {
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.inactivePictures {
+    display: none;
+}
+
+.activePictures {
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.picture {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+
+    .picture {
+        border-radius: 10px;
+    }
+
+    .carrousel {
+        height: 255px;
+        margin: 0 20px 15px 20px;
+        position: relative;
+    }
+
+    .arrowBack {
+        transform: scale(0.3);
+        margin: 0;
+    }
+
+    .arrowForward {
+        transform: scale(0.3);
+        margin: 0;
+    }
+
+    .pictureCountContainer {
+        display: none;
+    }
+}

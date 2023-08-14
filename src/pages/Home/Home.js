@@ -1,17 +1,13 @@
-import Header from "../../components/Header/Index";
-import Footer from "../../components/Footer/Index";
-import CoverHeader from "../../components/coverHeader";
+import CoverHeader from "../../components/CoverHeader/coverHeader";
 import coverImage from "../../assets/Image source 1.jpg"
-import Thumb from "./thumb";
+import Thumb from "../../components/Thumb/thumb";
 import styles from "./Home.module.css";
 import data from "../../data.json";
 
 function Home() {
     return (
         <>
-            <Header />
             <CoverHeader src={coverImage} name="the-sea-in-fall" title="Chez vous, partout et ailleurs"/>
-
             <section className={styles.thumbSection}>
                 {data.map(data => {
                     return(
@@ -22,7 +18,6 @@ function Home() {
                     )
                 })}
             </section>
-            <Footer />
         </>
     );
 };
