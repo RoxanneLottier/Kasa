@@ -6,7 +6,6 @@ function StarRating() {
   const { id } = useParams();
   const logement = data.find(element => {return element.id === id});
   const rating = logement.rating;
-  console.log(rating);
 
     return (
         <div className={styles.starRating}>

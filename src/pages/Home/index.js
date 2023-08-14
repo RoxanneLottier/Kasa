@@ -5,7 +5,6 @@ import coverImage from "../../assets/Image source 1.jpg"
 import Thumb from "./thumb";
 import styles from "./Home.module.css";
 import data from "../../data.json";
-import { useParams } from "react-router-dom";
 
 function Home() {
     return (

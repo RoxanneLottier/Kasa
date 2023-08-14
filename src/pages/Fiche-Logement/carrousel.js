@@ -8,7 +8,9 @@ function Carrousel() {
     const logement = data.find(element => {return element.id === id});
     const [activeIndex, setActiveIndex] = useState(0);
 
+    // get the list of pictures for the appartement
     const pictures = logement.pictures;
+    // create a list of the pictures of the appartment
     const pictureList = pictures.map((picture, index) =>
         <li key={index} className={index === activeIndex ? styles.activePictures : styles.inactivePictures}>
             <img className={styles.picture} src={picture}/>

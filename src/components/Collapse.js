@@ -4,12 +4,15 @@ import { useState, useRef } from "react";
 
 function Collapse(props) {
 
+    //Hook state set to false
     const [open, setOpen] = useState(false);
 
+    //Toogle function set to closed used on onClick to toogle between open and closed
     const toogle = () => {
         setOpen(!open);
     };
 
+    // declare the useRef hook. Used to stock the value of the size of the div when collapse is open
     const contentRef = useRef();
     if (contentRef.current) console.log(contentRef.current.scrollHeight);
 
